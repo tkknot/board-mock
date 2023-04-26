@@ -3,7 +3,7 @@ import '../styles/style.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header text-red-500">
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
