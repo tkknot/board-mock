@@ -9,8 +9,8 @@ export const Content = (props) => {
   if(!tags) return null
   
   return (
-    <div>
-      <div className="flex">
+    <div className="mx-16 border my-8 rounded-lg px-6">
+      <div className="flex mb-3">
         {
           tags.map(tag => {
           return (
@@ -19,11 +19,11 @@ export const Content = (props) => {
         })}
       </div>
 
-      <h2>
+      <h2 className="text-xl pb-1 font-bolder">
       {title}
       </h2>
 
-      <p>{ subtitle }</p>
+      <p className="mb-4 text-sm">{ subtitle }</p>
     </div>
   )
 }

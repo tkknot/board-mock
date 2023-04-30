@@ -1,8 +1,12 @@
 export const Tabs = (props) => {
   return (
-    <div className='tabs tabs-boxed'>
+    <div className='tabs'>
       {props.titles.map((title) => {
-        return <a className='tab'>{title}</a>;
+        return (
+          <p className='tab tab-bordered mx-16 text-2xl pb-12 font-bold'>
+            <a>{title}</a>
+          </p>
+        );
       })}
     </div>
   );

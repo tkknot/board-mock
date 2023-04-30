@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Layout>
         <Sidebar />
-        <ContentArea></ContentArea>
+        <ContentArea />
       </Layout>
       <Footer />
     </div>

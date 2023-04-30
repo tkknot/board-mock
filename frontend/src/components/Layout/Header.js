@@ -2,8 +2,8 @@ import { SearchBox } from "../SearchBox"
 
 export const Header = () => {
   return (
-    <header>
-      <SearchBox />      
+    <header className="bg-black h-20">
+      <SearchBox />
     </header>
-  )
+  );
 }
