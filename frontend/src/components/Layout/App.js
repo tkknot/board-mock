@@ -6,6 +6,11 @@ import { Layout } from "./Layout";
 import { Sidebar } from "./SIdebar";
 import { ContentArea } from "./ContentArea";
 
+import { Home } from '../../Page/Home'
+import { Create } from '../../Page/Create'
+
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+
 function App() {
   const [user, setUser] = useState([]);
 
@@ -21,8 +26,19 @@ function App() {
     <div className='App'>
       <Header />
       <Layout>
-        <Sidebar />
-        <ContentArea />
+        <BrowserRouter>
+          <Sidebar />
+          <ContentArea>
+            <Routes>
+              {/* home */}
+
+              <Route path='/' element={<Home />} />
+
+              {/* create-slead */}
+              <Route path='/create' element={<Create />} />
+            </Routes>
+          </ContentArea>
+        </BrowserRouter>
       </Layout>
       <Footer />
     </div>
